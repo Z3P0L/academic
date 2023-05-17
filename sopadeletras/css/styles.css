@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.sopa {
+    font-family: Arial, sans-serif;
+    width: min(100%, 400px);
+}
+
+.letra {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+}
