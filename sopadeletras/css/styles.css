@@ -9,6 +9,7 @@ body {
 
 .sopa {
     font-family: Arial, sans-serif;
+    text-align: start;
     width: min(100%, 400px);
 }
 
