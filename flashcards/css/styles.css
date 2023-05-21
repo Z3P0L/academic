@@ -12,16 +12,17 @@ h1 {
 }
 
 .flashcards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
 }
 
 .flashcard {
+    width: 320px;
     padding: 20px;
-    width: 350px;
     min-height: 240px;
     height: auto;
+    margin: 10px;
     border-radius: 20px;
     color: #000;
     background-color: #fff;
@@ -52,4 +53,14 @@ h1 {
 
 [id^=flashcard]:checked + .flashcard-content {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .flashcards {
+        display: block;
+    }
+
+    .flashcard {
+        width: 90%;
+    }
 }
