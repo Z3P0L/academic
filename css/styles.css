@@ -38,6 +38,8 @@ footer {
 }
 
 .nav {
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 5px 0;
     background-color: #000;
@@ -129,6 +131,49 @@ footer {
     padding: 12px;
     border-radius: 10px;
     background-color: #000;
+}
+
+#quiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.question {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0px rgba(10, 14, 29, 0.04), 0px 8px 64px 0px rgba(10, 14, 29, 0.08);;
+    margin-bottom: 20px;
+}
+
+.question-text {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.option {
+    margin: 10px;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong-answer {
+    color: red;
+    font-weight: bold;
+}
+
+.answer-btn {
+    margin-top: 10px;
 }
 
 @media all and (max-width: 768px) {
