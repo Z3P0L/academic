@@ -1,0 +1,55 @@
+body {
+    background-color: #fafafa;    
+}
+
+main {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flashcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.flashcard {
+    padding: 20px;
+    width: 350px;
+    min-height: 240px;
+    height: auto;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0px rgba(10, 14, 29, 0.04), 0px 8px 64px 0px rgba(10, 14, 29, 0.08);
+}
+
+.flashcard-title {
+    text-align: center;
+}
+
+.flashcard-title figure {
+    padding: 0;
+    margin: 0;
+}
+
+.flashcard-title figure img {
+    width: 80px;
+}
+
+.flashcard-content {
+    display: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+[id^=flashcard]:checked + .flashcard-content {
+    display: block;
+}
