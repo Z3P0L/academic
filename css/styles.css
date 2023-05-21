@@ -201,6 +201,7 @@ footer {
     }
 
     .nav {
+        display: block;
         margin: 0;
     }
 
