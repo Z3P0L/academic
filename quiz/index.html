@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="js/validator.js"></script>
+    <title>Sitio de Preguntas y Respuestas</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="wrapper">
+            <div id="logo">
+                <a href="/">
+                    <img src="../img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop">
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="curriculum/index.html">Curriculum</a></li>
+                <li><a href="snackconference/index.html">Snack conference</a></li>
+                <li><a href="sopadeletras/index.html">Sopa de letras</a></li>
+                <li><a href="flashcards/index.html">Flashcards</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="quiz">
+            <div class="question">
+                <div class="question-text">Pregunta 1: ¿Cuál es la capital de Francia?</div>
+                <ul class="options">
+                    <li class="option">
+                        <input type="radio" name="q1" value="a">
+                        <label for="q1">a) Madrid</label>
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q1" value="b">
+                        <label for="q1">b) París</label>
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q1" value="c">
+                        <label for="q1">c) Londres</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <div class="question-text">Pregunta 2: ¿2 + 2 = 4?</div>
+                <ul class="options">
+                    <li class="option">
+                        <input type="radio" name="q2" value="true">
+                        <label for="q2">Verdadero</label>
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q2" value="false">
+                        <label for="q2">Falso</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <div class="question-text">Pregunta 3: ¿Cuál es el océano más grande del mundo?</div>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" name="q3" value="a">
+                        <label for="q3">a) Océano Atlántico</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="q3" value="b">
+                        <label for="q3">b) Océano Pacífico</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="q3" value="c">
+                        <label for="q3">c) Océano Índico</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" name="q3" value="d">
+                        <label for="q3">d) Océano Ártico</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="submit-btn" onclick="submitQuiz()">Enviar respuestas</button>
+    </main>
+</body>
+
+</html>
