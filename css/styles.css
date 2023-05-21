@@ -176,6 +176,16 @@ footer {
     margin-top: 10px;
 }
 
+#submit-btn {
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #000;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
 @media all and (max-width: 768px) {
     main {
         text-align: center;
